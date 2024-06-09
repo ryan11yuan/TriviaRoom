@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Trivia Room</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="icon" type="image/x-icon" href="/images/TriviaRoomLogo.png">
+  </head>
+  <body>
+    <h1 class = title>Trivia Room</h1>
+    <div class="container">
+      <div id="home" class="flex-center flex-column">
+        <button class="btn1" id="upgradeButton">Upgrade</button>
+        <a class="btn" href="/game.html">Play</a>
+      </div>
+    </div>
+    <h5 id="currentScore">Points: 0</h5>
+    <script src="app.js"></script>
+
+    <h4 class = "drag">Drag Notes Here!</h4>
+    <form class="drag-and-drop-form">
+      <input id="drag-and-drop-input" class="drag-and-drop-input" type="file" multiple>
+      <label for="drag-and-drop-input" class="drag-and-drop-label">
+        <i class="fas fa-plus"></i>
+        <br>
+        Choose a file or drag it here
+      </label>
+    </form>
+
+  </body>
+</html>

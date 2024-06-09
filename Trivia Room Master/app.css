@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+:root {
+  background-color: #8905b1;
+  font-size: 62.5%;
+  background-image: url(images/room1.png);
+  height: 710px; /* You must set a specified height */
+  background-position-y: center; /* Center the image */
+  background-position-x: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 1600px 800px; /* Resize the background image to cover the entire container */
+}
+
+* {
+  
+  font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5.4rem;
+  color: #ffffff;
+}
+
+.title{
+  text-align: center;
+  font-size: 7.4rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  text-shadow: #000;
+}
+
+h1 > span {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #fff;
+  text-align: left;
+}
+
+h3 {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+}
+
+h4 {
+  font-size: 4.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+h5 {
+  position: absolute;
+  top: 135px;
+  font-size: 3rem;
+  color: #000;
+  text-align: left;
+  padding-left: 380px;
+}
+
+.score {
+  font-size: 7rem;
+  margin-bottom: 5rem;  
+}
+
+/* UTILITIES */
+
+.container {
+  width: 100vw;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+.container > * {
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* BUTTONS */
+.btn {
+  font-size: 2.5rem;
+  padding: 1.3rem 0;
+  width: 17rem;
+  text-align: center;
+  border: 0.1rem solid #8921ffdb;
+  text-decoration: none;
+  color: #8821ff;
+  background-color: white;
+  margin-bottom: 2.5rem;
+  margin-top: 115px;
+  margin-right: 360px;
+}
+
+.btn1 {
+  font-size: 2.5rem;
+  padding: 1.3rem 0;
+  width: 17rem;
+  text-align: center;
+  border: 0.1rem solid #8921ffdb;
+  text-decoration: none;
+  color: #8821ff;
+  background-color: white;
+  margin-right: 1000px;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(148, 86, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.btn1:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(148, 86, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* DRAG AND DROP */
+.drag {
+  padding-top: 400px;
+}
+
+.drag-and-drop-form {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.drag-and-drop-input {
+  display: none;
+}
+
+.drag-and-drop-label {
+  width: 100%;
+  border: 2px dashed #ffffff;
+  text-align: center;
+  display: block;
+  padding: 10rem 5rem;
+  transition: all .2s;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.drag-and-drop-label:hover {
+  background-color: #ffffffc8;
+  color: black;
+}
+
+.drag-and-drop-label i {
+  font-size: 2rem;
+  margin-bottom: .75rem;
+}

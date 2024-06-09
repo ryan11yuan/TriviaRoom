@@ -1,0 +1,24 @@
+:root {
+    background-color: #8905b1;
+    font-size: 62.5%;
+    background-image: url();
+  }
+
+.btn2 { 
+    font-size: 2.5rem;
+    padding: 1.6rem 0;
+    width: 25rem;
+    text-align: center;
+    border: 0.1rem solid #8821ff;
+    text-decoration: none;
+    color: #8821ff;
+    background-color: white;
+    margin-bottom: 2.5rem;
+}
+
+.btn2:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(148, 86, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
